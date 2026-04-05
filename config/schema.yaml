@@ -30,15 +30,15 @@ categorical_columns:
 drop_columns:
   - case_id
   - yr_of_estab
+  - requires_job_training 
 
 num_features:
   - no_of_employees
-  - prevailing_wage            
+  - prevailing_wage_annual     
   - company_age
 
 binary_columns:
   - has_job_experience
-  - requires_job_training
   - full_time_position
 
 ordinal_columns:
@@ -52,6 +52,6 @@ onehot_columns:
 transform_columns:
   - no_of_employees
   - company_age
-  - prevailing_wage      
+  - prevailing_wage_annual      
 
 target_column: case_status
